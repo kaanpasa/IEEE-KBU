@@ -1,80 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-    <!-- Basic -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
-   
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
- 
-     <!-- Site Metas -->
-    <title>IEEE KBÜ</title>  
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Site CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-
-</head>
-<body id="page-top" class="politics_version">
-
-    <!-- LOADER -->
-    <div id="preloader">
-        <div id="main-ld">
-			<div id="loader"></div>  
-		</div>
-    </div><!-- end loader -->
-    <!-- END LOADER -->
-	
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-			<img class="img-fluid" src="images/ieeekbu_logo.jpg" alt="" />
-		</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger active" href="#">Ana Sayfa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="hakkimizda.html">Hakkımızda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Komiteler</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Etkinliklerimiz</a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Bize Ulaşın</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-	
-	<section id="home" class="main-banner parallaxie" style="background: url('uploads/kbu-bg.jpg')">
+@extends('layouts.frontbase')
+@section('scrollanasayfa', 'active')
+@section('content')
+<section id="home" class="main-banner parallaxie" style="background: url('uploads/kbu-bg.jpg')">
 		<div class="heading">
 			<h1>IEEE KBÜ Öğrenci Kolu</h1>
 			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
@@ -102,7 +29,7 @@
 
                 <div class="col-md-6">
                     <div class="right-box-pro wow fadeIn">
-                        <img src="uploads/about_04.jpg" alt="" class="img-fluid img-rounded">
+                        <img src="{{asset('assets')}}/uploads/about_04.jpg" alt="" class="img-fluid img-rounded">
                     </div><!-- end media -->
                 </div><!-- end col -->
             </div><!-- end row -->
@@ -169,54 +96,54 @@
 			<div class="gallery-list row">
 				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-01.jpg" class="img-fluid" alt="Image">
+						<img src="{{asset('assets')}}/uploads/gallery_img-01.jpg" class="img-fluid" alt="Image">
 						<div class="img-overlay">
-							<a href="uploads/gallery_img-01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+							<a href="{{asset('assets')}}/uploads/gallery_img-01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
 						</div>
 					</div>
 				</div>
 				
 				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-02.jpg" class="img-fluid" alt="Image">
+						<img src="{{asset('assets')}}/uploads/gallery_img-02.jpg" class="img-fluid" alt="Image">
 						<div class="img-overlay">
-							<a href="uploads/gallery_img-02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+							<a href="{{asset('assets')}}/uploads/gallery_img-02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
 						</div>
 					</div>
 				</div>
 				
 				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-03.jpg" class="img-fluid" alt="Image">
+						<img src="{{asset('assets')}}/uploads/gallery_img-03.jpg" class="img-fluid" alt="Image">
 						<div class="img-overlay">
-							<a href="uploads/gallery_img-03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+							<a href="{{asset('assets')}}/uploads/gallery_img-03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
 						</div>
 					</div>
 				</div>
 				
 				<div class="col-md-4 col-sm-6 gallery-grid gal_b gal_a">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-04.jpg" class="img-fluid" alt="Image">
+						<img src="{{asset('assets')}}/uploads/gallery_img-04.jpg" class="img-fluid" alt="Image">
 						<div class="img-overlay">
-							<a href="uploads/gallery_img-04.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+							<a href="{{asset('assets')}}/uploads/gallery_img-04.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
 						</div>
 					</div>
 				</div>
 				
 				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-05.jpg" class="img-fluid" alt="Image">
+						<img src="{{asset('assets')}}/uploads/gallery_img-05.jpg" class="img-fluid" alt="Image">
 						<div class="img-overlay">
-							<a href="uploads/gallery_img-05.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+							<a href="{{asset('assets')}}/uploads/gallery_img-05.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
 						</div>
 					</div>
 				</div>
 				
 				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_a">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-06.jpg" class="img-fluid" alt="Image">
+						<img src="{{asset('assets')}}/uploads/gallery_img-06.jpg" class="img-fluid" alt="Image">
 						<div class="img-overlay">
-							<a href="uploads/gallery_img-06.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+							<a href="{{asset('assets')}}/uploads/gallery_img-06.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
 						</div>
 					</div>
 				</div>
@@ -236,7 +163,7 @@
 				<div class="col-md-4 col-sm-6 col-lg-4">
 					<div class="post-box">
 						<div class="post-thumb">
-							<img src="uploads/blog-01.jpg" class="img-fluid" alt="post-img" />
+							<img src="{{asset('assets')}}/uploads/blog-01.jpg" class="img-fluid" alt="post-img" />
 							<div class="date">
 								<span>06</span>
 								<span>Aug</span>
@@ -245,9 +172,9 @@
 						<div class="post-info">
 							<h4>Quisque auctor lectus interdum nisl accumsan venenatis.</h4>
 							<ul>
-                                <li>by <a href="#">CS</a></li>
+                                <li>by <a href="{{asset('assets')}}/#">CS</a></li>
                                 <li>Apr 21, 2018</li>
-                                <li><a href="#"><b> Comments</b></a></li>
+                                <li><a href="{{asset('assets')}}/#"><b> Comments</b></a></li>
                             </ul>
 							<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
 						</div>
@@ -256,7 +183,7 @@
 				<div class="col-md-4 col-sm-6 col-lg-4">
 					<div class="post-box">
 						<div class="post-thumb">
-							<img src="uploads/blog-02.jpg" class="img-fluid" alt="post-img" />
+							<img src="{{asset('assets')}}/uploads/blog-02.jpg" class="img-fluid" alt="post-img" />
 							<div class="date">
 								<span>06</span>
 								<span>Aug</span>
@@ -265,9 +192,9 @@
 						<div class="post-info">
 							<h4>Quisque auctor lectus interdum nisl accumsan venenatis.</h4>
 							<ul>
-                                <li>by <a href="#">WIE</a></li>
+                                <li>by <a href="{{asset('assets')}}/#">WIE</a></li>
                                 <li>Apr 21, 2018</li>
-                                <li><a href="#"><b> Comments</b></a></li>
+                                <li><a href="{{asset('assets')}}/#"><b> Comments</b></a></li>
                             </ul>
 							<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
 						</div>
@@ -276,7 +203,7 @@
 				<div class="col-md-4 col-sm-6 col-lg-4">
 					<div class="post-box">
 						<div class="post-thumb">
-							<img src="uploads/blog-03.jpg" class="img-fluid" alt="post-img" />
+							<img src="{{asset('assets')}}/uploads/blog-03.jpg" class="img-fluid" alt="post-img" />
 							<div class="date">
 								<span>06</span>
 								<span>Aug</span>
@@ -285,9 +212,9 @@
 						<div class="post-info">
 							<h4>Quisque auctor lectus interdum nisl accumsan venenatis.</h4>
 							<ul>
-                                <li>by <a href="#">RAS</a></li>
+                                <li>by <a href="{{asset('assets')}}/#">RAS</a></li>
                                 <li>Apr 21, 2018</li>
-                                <li><a href="#"><b> Comments</b></a></li>
+                                <li><a href="{{asset('assets')}}/#"><b> Comments</b></a></li>
                             </ul>
 							<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
 						</div>
@@ -342,34 +269,4 @@
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->
-
-    <div class="copyrights">
-        <div class="container">
-            <div class="footer-distributed">
-                <div class="footer-left">
-                    
-                    <p class="footer-company-name">Tüm hakları saklıdır. &copy; 2022 <a href="#">İEEE KBÜ CS</a> Design By : 
-					<a href="https://www.linkedin.com/company/ieee-kbu-cs">IEEE KBÜ CS</a></p>
-                </div>
-            </div>
-        </div><!-- end container -->
-    </div><!-- end copyrights -->
-
-    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
-
-    <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
-	<!-- Camera Slider -->
-	<script src="js/jquery.mobile.customized.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script> 
-	<script src="js/parallaxie.js"></script>
-	<script src="js/headline.js"></script>
-	<!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="js/custom.js"></script>
-    <script src="js/jquery.vide.js"></script>
-
-</body>
-</html>
+@endsection
